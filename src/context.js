@@ -3,10 +3,6 @@ import React, { Component } from 'react';
 //import items from './data';
 import Client from './contentful';
 
-Client.getEntries({
-  content_type: 'hotelRoom',
-}).then((response) => console.log(response.items));
-
 const RoomContext = React.createContext();
 
 class RoomProvider extends Component {
